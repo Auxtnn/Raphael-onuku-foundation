@@ -87,7 +87,8 @@ const ScholarshipSuccess = () => {
                   <p className="italic text-lg" style={{ color: "#4B5563" }}>
                     The ROF Scholarship changed my life. I was about to drop out
                     of school due to financial constraints when I received
-                    support. Now I'm pursuing my dream of becoming a doctor.
+                    support. Now I&apos;m pursuing my dream of becoming a
+                    doctor.
                   </p>
                 </div>
                 <div className="flex items-center">
@@ -112,8 +113,8 @@ const ScholarshipSuccess = () => {
               <p className="text-lg mb-8" style={{ color: "#4B5563" }}>
                 Our scholarship recipients have gone on to excel in various
                 fields, from medicine to engineering to education. We take pride
-                in their achievements and the positive impact they're making in
-                their communities.
+                in their achievements and the positive impact they&apos;re
+                making in their communities.
               </p>
             </motion.div>
           </div>

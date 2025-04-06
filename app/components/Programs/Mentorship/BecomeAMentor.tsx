@@ -28,9 +28,9 @@ const BecomeMentor = () => {
 
               <p className="text-lg mb-6" style={{ color: "#4B5563" }}>
                 Share your knowledge, skills, and experience to help shape the
-                future of young Nigerians. By becoming a mentor, you'll make a
-                lasting impact on a young person's life while developing your
-                own leadership abilities.
+                future of young Nigerians. By becoming a mentor, you&apos;ll
+                make a lasting impact on a young person&apos;s life while
+                developing your own leadership abilities.
               </p>
 
               <h3
@@ -145,9 +145,9 @@ const BecomeMentor = () => {
 
               <div className="bg-blue-50 p-4 rounded-lg mb-8">
                 <p className="text-sm italic" style={{ color: "#1075BB" }}>
-                  "Being a mentor isn't just about giving advice; it's about
-                  believing in someone's potential and helping them see it for
-                  themselves."
+                  &quot;Being a mentor isn&apos;t just about giving advice;
+                  it&apos;s about believing in someone&apos;s potential and
+                  helping them see it for themselves.&quot;
                 </p>
               </div>
             </motion.div>

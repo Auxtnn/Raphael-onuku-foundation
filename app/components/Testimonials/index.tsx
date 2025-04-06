@@ -141,7 +141,9 @@ export default class TestimonialsSection extends Component {
                         />
                       </svg>
 
-                      <p className="text-[#4b5563] mb-6">"{item.quote}"</p>
+                      <p className="text-[#4b5563] mb-6">
+                        &quot;{item.quote}&quot;
+                      </p>
                     </div>
 
                     <div className="border-t border-[#f3f4f6] pt-4">

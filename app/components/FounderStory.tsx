@@ -110,10 +110,10 @@ const FounderStory = () => {
 
             <p className="text-base mb-8" style={{ color: "#4B5563" }}>
               The Raphael Onuku Foundation was born from a deeply personal
-              journey and commitment to uplift indigent youth. Raphael's own
-              experiences navigating educational barriers has shaped the
-              foundation's mission to provide opportunities for underprivileged
-              Nigerian children.
+              journey and commitment to uplift indigent youth. Raphael&apos;s
+              own experiences navigating educational barriers has shaped the
+              foundation&apos;s mission to provide opportunities for
+              underprivileged Nigerian children.
             </p>
 
             {/* Timeline */}

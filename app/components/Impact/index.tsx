@@ -121,9 +121,9 @@ export default function ImpactSection() {
             Our <span style={{ color: "#1075BB" }}>Impact</span> So Far
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Through mentorship, scholarships, and community engagement, we're
-            breaking barriers and creating pathways to success for Nigerian
-            youth.
+            Through mentorship, scholarships, and community engagement,
+            we&apos;re breaking barriers and creating pathways to success for
+            Nigerian youth.
           </p>
         </motion.div>
 

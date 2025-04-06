@@ -162,8 +162,8 @@ const PartnerSection = () => {
                     Current Partners
                   </h4>
                   <p className="mb-4" style={{ color: "#4B5563" }}>
-                    We're proud to partner with organizations that share our
-                    commitment to youth empowerment through education:
+                    We&apos;re proud to partner with organizations that share
+                    our commitment to youth empowerment through education:
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center">

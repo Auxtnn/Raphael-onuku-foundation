@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
@@ -471,8 +471,8 @@ const FAQSection = () => {
             Still have questions?
           </h3>
           <p className="mb-6" style={{ color: "#4B5563" }}>
-            We're here to help. Contact us directly and we'll get back to you as
-            soon as possible.
+            We&apos;re here to help. Contact us directly and we&apos;ll get back
+            to you as soon as possible.
           </p>
           <motion.a
             href="/contact"

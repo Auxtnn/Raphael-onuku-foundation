@@ -29,8 +29,9 @@ const ProgramOverview = () => {
             <p className="text-base mb-6" style={{ color: "#4B5563" }}>
               Our Digital Literacy Training program teaches essential computer
               and internet skills to students with limited technology exposure.
-              In today's digital world, computer literacy is no longer optional
-              but a fundamental skill for academic success and career readiness.
+              In today&apos;s digital world, computer literacy is no longer
+              optional but a fundamental skill for academic success and career
+              readiness.
             </p>
 
             <p className="text-base mb-8" style={{ color: "#4B5563" }}>

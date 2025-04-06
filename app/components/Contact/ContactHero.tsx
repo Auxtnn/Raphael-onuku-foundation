@@ -57,8 +57,8 @@ const ContactHero = () => {
             className="text-xl mb-8"
             style={{ color: "#4B5563" }}
           >
-            Have questions about our programs or how you can get involved? We'd
-            love to hear from you.
+            Have questions about our programs or how you can get involved?
+            We&apos;d love to hear from you.
           </motion.p>
         </div>
       </div>

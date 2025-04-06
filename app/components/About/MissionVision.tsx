@@ -203,11 +203,11 @@ const MissionVision = () => {
                 their potential to become leaders in their communities.
               </p>
 
-              <div className="bg-blue-50 p-4 rounded-lg">
+              <div className="bg-[#eff6ff] p-4 rounded-lg">
                 <p className="italic" style={{ color: "#1075BB" }}>
-                  "We provide guidance, resources, and financial support to
+                  &quot;We provide guidance, resources, and financial support to
                   those who need it most, thereby breaking the cycle of poverty
-                  and bridging gender or socioeconomic gaps in education."
+                  and bridging gender or socioeconomic gaps in education.&quot;
                 </p>
               </div>
             </div>
@@ -277,12 +277,13 @@ const MissionVision = () => {
                 guidance.
               </p>
 
-              <div className="bg-green-50 p-4 rounded-lg">
+              <div className="bg-[#f0fdf4] p-4 rounded-lg">
                 <p className="italic" style={{ color: "#30C86B" }}>
-                  "We envision a future in which every indigent young person has
-                  equal access to quality education and dedicated mentorship,
-                  creating a self-sustaining cycle of empowerment – educated and
-                  empowered children and youths uplifting others."
+                  &quot;We envision a future in which every indigent young
+                  person has equal access to quality education and dedicated
+                  mentorship, creating a self-sustaining cycle of empowerment –
+                  educated and empowered children and youths uplifting
+                  others.&quot;
                 </p>
               </div>
             </div>

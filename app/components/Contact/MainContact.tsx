@@ -297,8 +297,8 @@ const ContactForm = () => {
                   className="mb-6 p-4 rounded-lg text-white"
                   style={{ backgroundColor: "#30C86B" }}
                 >
-                  Thank you for your message! We'll get back to you as soon as
-                  possible.
+                  Thank you for your message! We&apos;ll get back to you as soon
+                  as possible.
                 </div>
               )}
 

@@ -178,7 +178,7 @@ export default function CTASection() {
                 className="text-2xl font-bold mb-3"
                 style={{ color: "#1075BB" }}
               >
-                Ready to transform a young Nigerian's future?
+                Ready to transform a young Nigerian&apos;s future?
               </h3>
               <p className="text-[#4b5563] mb-6 max-w-2xl mx-auto">
                 Your contribution, no matter how small, can make a significant
