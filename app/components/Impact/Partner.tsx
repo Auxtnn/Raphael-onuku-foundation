@@ -154,7 +154,7 @@ const PartnerSection = () => {
                   difference.
                 </p>
 
-                <div className="bg-blue-50 p-6 rounded-lg mb-6">
+                <div className="bg-[#eff6ff] p-6 rounded-lg mb-6">
                   <h4
                     className="text-lg font-semibold mb-4"
                     style={{ color: "#1075BB" }}
@@ -320,10 +320,11 @@ const PartnerSection = () => {
                     </label>
                     <select
                       id="partnershipType"
+                      defaultValue=""
                       className="w-full px-4 py-3 rounded-lg border border-[#d1d5db] focus:outline-none focus:ring-2 focus:ring-[#1075BB]"
                       required
                     >
-                      <option value="" disabled selected>
+                      <option value="" disabled>
                         Select partnership type
                       </option>
                       <option value="corporate">Corporate Partnership</option>

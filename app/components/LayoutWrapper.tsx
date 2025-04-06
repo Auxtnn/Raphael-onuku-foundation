@@ -1,26 +1,26 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { PageLoader } from "./PageLoader";
+import dynamic from "next/dynamic";
 
-import Navbar from "./Navbar/Navbar";
-import FooterComponent from "./Footer/Footer";
-import FAQSection from "./FAQ";
-import Newsletter from "./Newsletter/Newsletter";
-
+// Dynamically import PageLoader with no SSR
+const PageLoader = dynamic(() => import("./PageLoader"), {
+  ssr: false,
+  loading: () => null,
+});
 
 export const ClientLayoutWrapper = ({
   children,
 }: {
   children: React.ReactNode;
 }) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false); // Start with false to avoid flash
 
   useEffect(() => {
-    // Simulate a loading delay
+    setIsLoading(true);
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Adjust the delay as needed
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -28,7 +28,9 @@ export const ClientLayoutWrapper = ({
   return (
     <>
       {isLoading && <PageLoader />}
-      {!isLoading && children}
+      <div style={{ opacity: isLoading ? 0 : 1, transition: "opacity 300ms" }}>
+        {children}
+      </div>
     </>
   );
 };

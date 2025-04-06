@@ -223,10 +223,11 @@ const BecomeMentor = () => {
                   </label>
                   <select
                     id="experience"
+                    defaultValue=""
                     className="w-full px-4 py-3 rounded-lg border border-[#d1d5db] focus:outline-none focus:ring-2 focus:ring-[#1075B]"
                     required
                   >
-                    <option value="" disabled selected>
+                    <option value="" disabled>
                       Select your experience level
                     </option>
                     <option value="none">No prior experience</option>

@@ -415,10 +415,11 @@ const VolunteerSection = () => {
                     </label>
                     <select
                       id="availability"
+                      defaultValue=""
                       className="w-full px-4 py-3 rounded-lg border border-[#d1d5db] focus:outline-none focus:ring-2 focus:ring-[#30C86B]"
                       required
                     >
-                      <option value="" disabled selected>
+                      <option value="" disabled>
                         Select your availability
                       </option>
                       <option value="weekdays">Weekdays</option>
