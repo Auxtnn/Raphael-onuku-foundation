@@ -7,7 +7,9 @@ import { motion, useInView } from "framer-motion";
 
 const PartnerSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  // Reduce the threshold for triggering the animation to ensure it works on mobile
+  // and set triggerOnce to true to ensure animations trigger on initial view
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   const partnershipTypes = [
     {
@@ -49,9 +51,10 @@ const PartnerSection = () => {
     <section id="partner" ref={ref} className="pb-20 pt-10 bg-[#f9fafb]">
       <div className="container mx-auto lg:w-11/12 px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
+          {/* Modified animation settings to ensure visibility on mobile */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-3xl font-bold mb-4"
             style={{ color: "#1075BB" }}
@@ -61,7 +64,7 @@ const PartnerSection = () => {
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-lg"
             style={{ color: "#4B5563" }}
@@ -77,9 +80,7 @@ const PartnerSection = () => {
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
-                animate={
-                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
-                }
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                 className="bg-white p-8 rounded-lg shadow-md h-full flex flex-col"
               >
@@ -136,7 +137,7 @@ const PartnerSection = () => {
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className="bg-white p-8 rounded-lg shadow-md"
           >
@@ -368,4 +369,5 @@ const PartnerSection = () => {
     </section>
   );
 };
+
 export default PartnerSection;
