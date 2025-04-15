@@ -65,7 +65,7 @@ const footerLinks = [
 ];
 
 const contactInfo = [
-  { icon: FaPhone, text: "+234 706 557 2048" },
+  { icon: FaPhone, text: "+2347011161274" },
   {
     icon: FaEnvelope,
     text: "raphaelonukufoundation@outlook.com",
@@ -154,7 +154,7 @@ const FooterComponent = () => {
                 const Icon = item.icon;
                 return (
                   <li key={i} className="flex items-start">
-                    <span className="mr-3 mt-1 text-[#2563eb]">
+                    <span className="mr-3 mt-1 text-[#1075BB]">
                       <Icon size={16} />
                     </span>
                     <span className="text-sm text-[#4b5563] break-words">

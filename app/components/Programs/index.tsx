@@ -36,14 +36,6 @@ export default function ProgramsHighlight() {
       link: "/programs/mentorship",
       color: "#1075BB",
     },
-    {
-      title: "Digital Literacy Training",
-      description:
-        "Equipping underprivileged students with essential computer and internet skills for the modern world.",
-      icon: <FaLaptopCode className="h-6 w-6" />,
-      link: "/programs/digital-literacy",
-      color: "#30C86B",
-    },
   ];
 
   return (
@@ -71,7 +63,7 @@ export default function ProgramsHighlight() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {programs.map((program, index) => (
             <motion.div
               key={index}
@@ -123,7 +115,7 @@ export default function ProgramsHighlight() {
             </motion.div>
           ))}
         </div>
-
+        {/* 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -138,7 +130,7 @@ export default function ProgramsHighlight() {
             View All Programs
             <BookOpen className="h-5 w-5 ml-1" />
           </Link>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

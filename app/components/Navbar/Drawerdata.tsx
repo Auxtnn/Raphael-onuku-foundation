@@ -30,7 +30,6 @@ const navigation: NavigationItem[] = [
       { name: "IgnitedFuture Community", href: "/programs/ignited-future" },
       { name: "ROF Scholarship Program", href: "/programs/scholarship" },
       { name: "Mentorship Programs", href: "/programs/mentorship" },
-      { name: "Digital Literacy Training", href: "/programs/digital-literacy" },
     ],
   },
   {
@@ -40,6 +39,10 @@ const navigation: NavigationItem[] = [
   {
     name: "Blog",
     href: "/blog",
+  },
+  {
+    name: "Contact Us",
+    href: "/contact",
   },
 ];
 
@@ -117,11 +120,11 @@ const Data: React.FC<DataProps> = ({ closeSidebar }) => {
 
             <div className="flex pt-4 lg:hidden">
               <a
-                href="/contact"
+                href="/get-involved#donate"
                 className="inline-flex items-center text-white gap-2 bg-[#1075BB] hover:bg-[#0d5f91] px-6 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-opacity-90"
                 onClick={handleLinkClick}
               >
-                Reach Out to Us
+                Donate
                 <svg
                   width="20"
                   height="20"

@@ -10,7 +10,7 @@ const BecomeMentor = () => {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <section id="become-mentor" ref={ref} className="py-10 bg-[#f9fafb]">
+    <section id="find-mentor" ref={ref} className="py-10 bg-[#f9fafb]">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -23,21 +23,21 @@ const BecomeMentor = () => {
                 className="text-3xl font-bold mb-6"
                 style={{ color: "#1075BB" }}
               >
-                Become a Mentor
+                Find a Mentor
               </h2>
 
               <p className="text-lg mb-6" style={{ color: "#4B5563" }}>
-                Share your knowledge, skills, and experience to help shape the
-                future of young Nigerians. By becoming a mentor, you&apos;ll
-                make a lasting impact on a young person&apos;s life while
-                developing your own leadership abilities.
+                Connect with experienced professionals who can guide you on your
+                educational and career journey. Our mentors are committed to
+                helping young Nigerians develop skills, gain confidence, and
+                achieve their goals.
               </p>
 
               <h3
                 className="text-xl font-semibold mb-4"
                 style={{ color: "#111827" }}
               >
-                What We Look For:
+                Benefits of Having a Mentor:
               </h3>
 
               <ul className="space-y-3 mb-8">
@@ -63,7 +63,7 @@ const BecomeMentor = () => {
                     </svg>
                   </div>
                   <p style={{ color: "#4B5563" }}>
-                    Professional experience in your field
+                    Personalized guidance from industry professionals
                   </p>
                 </li>
                 <li className="flex items-start">
@@ -88,7 +88,7 @@ const BecomeMentor = () => {
                     </svg>
                   </div>
                   <p style={{ color: "#4B5563" }}>
-                    Commitment to youth development
+                    Access to networks and opportunities
                   </p>
                 </li>
                 <li className="flex items-start">
@@ -113,7 +113,7 @@ const BecomeMentor = () => {
                     </svg>
                   </div>
                   <p style={{ color: "#4B5563" }}>
-                    Good communication and listening skills
+                    Support in setting and achieving educational goals
                   </p>
                 </li>
                 <li className="flex items-start">
@@ -138,16 +138,16 @@ const BecomeMentor = () => {
                     </svg>
                   </div>
                   <p style={{ color: "#4B5563" }}>
-                    Ability to commit at least 4 hours per month
+                    Development of crucial professional and life skills
                   </p>
                 </li>
               </ul>
 
               <div className="bg-blue-50 p-4 rounded-lg mb-8">
                 <p className="text-sm italic" style={{ color: "#1075BB" }}>
-                  &quot;Being a mentor isn&apos;t just about giving advice;
-                  it&apos;s about believing in someone&apos;s potential and
-                  helping them see it for themselves.&quot;
+                  &quot;A mentor is someone who allows you to see the hope
+                  inside yourself and helps you navigate the path to reach your
+                  potential.&quot;
                 </p>
               </div>
             </motion.div>
@@ -162,7 +162,7 @@ const BecomeMentor = () => {
                 className="text-xl font-bold mb-6 text-center"
                 style={{ color: "#1075BB" }}
               >
-                Mentor Application Form
+                Mentor Request Form
               </h3>
 
               <form className="space-y-6">
@@ -200,54 +200,55 @@ const BecomeMentor = () => {
 
                 <div>
                   <label
-                    htmlFor="profession"
+                    htmlFor="education"
                     className="block mb-2 font-medium text-[#374151]"
                   >
-                    Profession/Area of Expertise
+                    Current Education Level
+                  </label>
+                  <select
+                    id="education"
+                    defaultValue=""
+                    className="w-full px-4 py-3 rounded-lg border border-[#d1d5db] focus:outline-none focus:ring-2 focus:ring-[#1075B]"
+                    required
+                  >
+                    <option value="" disabled>
+                      Select your education level
+                    </option>
+                    <option value="secondary">Secondary School</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate/Postgraduate</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="interest"
+                    className="block mb-2 font-medium text-[#374151]"
+                  >
+                    Area of Interest
                   </label>
                   <input
                     type="text"
-                    id="profession"
+                    id="interest"
                     className="w-full px-4 py-3 rounded-lg border border-[#d1d5db] focus:outline-none focus:ring-2 focus:ring-[#1075B]"
-                    placeholder="e.g., Education, Engineering, Medicine"
+                    placeholder="e.g., Science, Technology, Business"
                     required
                   />
                 </div>
 
                 <div>
                   <label
-                    htmlFor="experience"
+                    htmlFor="goals"
                     className="block mb-2 font-medium text-[#374151]"
                   >
-                    Mentoring Experience
-                  </label>
-                  <select
-                    id="experience"
-                    defaultValue=""
-                    className="w-full px-4 py-3 rounded-lg border border-[#d1d5db] focus:outline-none focus:ring-2 focus:ring-[#1075B]"
-                    required
-                  >
-                    <option value="" disabled>
-                      Select your experience level
-                    </option>
-                    <option value="none">No prior experience</option>
-                    <option value="some">Some informal experience</option>
-                    <option value="experienced">Experienced mentor</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="motivation"
-                    className="block mb-2 font-medium text-[#374151]"
-                  >
-                    Why do you want to become a mentor?
+                    What are your goals for mentorship?
                   </label>
                   <textarea
-                    id="motivation"
+                    id="goals"
                     rows={4}
                     className="w-full px-4 py-3 rounded-lg border border-[#d1d5db] focus:outline-none focus:ring-2 focus:ring-[#1075B]"
-                    placeholder="Tell us about your motivation and what you hope to achieve"
+                    placeholder="Tell us about your educational/career goals and what you hope to gain from mentorship"
                     required
                   ></textarea>
                 </div>
@@ -257,7 +258,7 @@ const BecomeMentor = () => {
                   className="w-full px-6 py-3 rounded-lg text-white font-medium transition-all duration-300"
                   style={{ backgroundColor: "#1075BB" }}
                 >
-                  Submit Application
+                  Submit Request
                 </button>
               </form>
             </motion.div>

@@ -14,7 +14,7 @@ export const ClientLayoutWrapper = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [isLoading, setIsLoading] = useState(false); // Start with false to avoid flash
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);

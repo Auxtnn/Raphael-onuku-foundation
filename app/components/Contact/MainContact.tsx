@@ -83,8 +83,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <p style={{ color: "#4B5563" }}>+234 706 557 2048</p>
-                  <p style={{ color: "#4B5563" }}>+1 734 489 3366</p>
+                  <p style={{ color: "#4B5563" }}>+2347011161274</p>
                 </div>
               </div>
 

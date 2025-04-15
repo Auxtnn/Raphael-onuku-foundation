@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
-import { HeartHandshake, Users, HandCoins, CalendarCheck } from "lucide-react";
+import { HeartHandshake, HandCoins, CalendarCheck } from "lucide-react";
 
 export default function CTASection() {
   const ref = useRef(null);
@@ -11,20 +11,11 @@ export default function CTASection() {
 
   const involvementOptions = [
     {
-      title: "Become a Mentor",
-      description:
-        "Share your knowledge and experience with ambitious Nigerian youth",
-      icon: <Users className="h-8 w-8" />,
-      link: "/get-involved",
-      color: "#1075BB",
-      bgColor: "#EBF8FF",
-    },
-    {
       title: "Make a Donation",
       description:
         "Support our scholarship programs and help break educational barriers",
       icon: <HandCoins className="h-8 w-8" />,
-      link: "/get-involved",
+      link: "/get-involved#donate",
       color: "#30C86B",
       bgColor: "#F0FDF4",
     },
@@ -50,7 +41,7 @@ export default function CTASection() {
 
   return (
     <section
-      className="py-20 relative overflow-hidden" // Added overflow-hidden here
+      className="py-20 relative overflow-hidden"
       ref={ref}
       style={{
         backgroundImage:
@@ -108,21 +99,19 @@ export default function CTASection() {
         </motion.div>
 
         <div className="mx-auto overflow-hidden">
-          {" "}
-          {/* Added overflow-hidden here */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {involvementOptions.map((option, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }} // Changed x offset to y offset
+                initial={{ opacity: 0, y: 20 }}
                 animate={
                   isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
                 }
                 transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
-                className="flex flex-col md:flex-row items-start gap-6 group"
+                className="flex flex-col items-center text-center group"
               >
                 <div
-                  className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white md:mt-3"
+                  className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white mb-4"
                   style={{ backgroundColor: option.color }}
                 >
                   {option.icon}

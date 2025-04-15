@@ -74,31 +74,9 @@ const MentorshipHero = () => {
               className="flex flex-wrap gap-4"
             >
               <Link
-                href="#become-mentor"
+                href="#apply-for-a-mentor"
                 className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-opacity-90"
                 style={{ color: "#1075BB" }}
-              >
-                Become a Mentor
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5 12H19M19 12L12 5M19 12L12 19"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </Link>
-
-              <Link
-                href="/programs/ignited-future"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-lg font-medium border-2 border-white text-white transition-all duration-300 hover:bg-white/10"
               >
                 Find a Mentor
                 <svg
@@ -109,7 +87,7 @@ const MentorshipHero = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
                     stroke="currentColor"
                     strokeWidth="2"
                     strokeLinecap="round"

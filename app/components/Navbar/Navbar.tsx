@@ -28,7 +28,6 @@ const navigation: NavigationItem[] = [
       { name: "IgnitedFuture Community", href: "/programs/ignited-future" },
       { name: "ROF Scholarship Program", href: "/programs/scholarship" },
       { name: "Mentorship Programs", href: "/programs/mentorship" },
-      { name: "Digital Literacy Training", href: "/programs/digital-literacy" },
     ],
   },
 
@@ -39,6 +38,10 @@ const navigation: NavigationItem[] = [
   {
     name: "Blog",
     href: "/blog",
+  },
+  {
+    name: "Contact Us",
+    href: "/contact",
   },
 ];
 
@@ -203,10 +206,10 @@ const Navbar = () => {
 
               <div className="hidden lg:flex">
                 <a
-                  href="/contact"
+                  href="/get-involved#donate"
                   className="inline-flex items-center text-white gap-2 bg-[#1075BB] hover:bg-[#0d5f91] px-6 py-3 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-opacity-90"
                 >
-                  Reach Out to Us
+                  Donate
                   <svg
                     width="20"
                     height="20"
